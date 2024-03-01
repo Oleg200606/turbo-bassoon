@@ -7,14 +7,14 @@
 
 using namespace std;
 
-// 1. Переворачивает слово задом наперед
+
 string reverse(const string& word) {
     string reversedWord = word;
     reverse(reversedWord.begin(), reversedWord.end());
     return reversedWord;
 }
 
-// 2. Удаляет гласные буквы из слова
+
 string removeVowels(const string& word) {
     string result;
     const string vowels = "aeiouAEIOU";
@@ -26,7 +26,6 @@ string removeVowels(const string& word) {
     return result;
 }
 
-// 3. Удаляет согласные буквы из слова
 string removeConsonants(const string& word) {
     string result;
     const string consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
@@ -38,10 +37,9 @@ string removeConsonants(const string& word) {
     return result;
 }
 
-// 4. Перемешивает буквы в слове
+
 string shuffleWord(const string& word) {
     string shuffledWord = word;
-    // Создание генератора случайных чисел
     random_device rd;
     mt19937 g(rd());
     
